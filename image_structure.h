@@ -22,11 +22,19 @@ typedef struct ImageStructure{
 
 typedef struct cluster{
 
-    unsigned char r, g, b;
+    int r, g, b;
     point_t *points;
     int size;
 
 }clusters_t;
+
+
+typedef struct cluster2{
+    int i,j;
+    int r, g, b;
+    point_t *points;
+    int size;
+}clusters2_t;
 
 #endif //VISUALCOMPUTING_TP2_IMAGE_STRUCTURE_H
 

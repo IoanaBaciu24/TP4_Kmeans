@@ -70,8 +70,9 @@ int main(int argc, char *argv[])
 //    image_structure_t *new_img = histogram_stretching(img, min, max);
 //    image_structure_t *new_img =treshold_magnitude(img, 70);
 //            write_image_to_file(new_img,output_file_descriptor);
-         img = k_means_yay(img,  5);
-    write_image_to_file_rgb(img, output_file_descriptor);
+//         img = k_means_yay(img,  5);
+    image_structure_rgb_t *new_img =k_means_yay(img, 20);
+    write_image_to_file_rgb(new_img, output_file_descriptor);
 
 
 }

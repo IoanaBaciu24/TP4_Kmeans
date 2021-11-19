@@ -151,7 +151,7 @@ image_structure_rgb_t* read_rgb_image(FILE *file_descr){
     g = (unsigned char*) malloc(cols*rows*sizeof (unsigned char));
     b = (unsigned char*) malloc(cols*rows*sizeof (unsigned char));
 
-    image_structure_rgb_t *image = malloc(sizeof(image_structure_t));
+    image_structure_rgb_t *image = malloc(sizeof(image_structure_rgb_t));
     for(int i=0; i < rows; i++)
     {for(int j=0; j < cols ; j++)
         {
